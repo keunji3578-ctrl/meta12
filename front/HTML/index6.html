@@ -6,8 +6,11 @@
     <title>Document</title>
 </head>
 <body>
+            <!--핵심 포인트: 여기 사용되는 문법은 서버로의 폼  전송이 목적 
+            <form>와 함께 사용되는 <input>의 타입을 이해해야함
+            최종적의 유저의 정보를 서버로 전달하는 동작은 <input type= "subimt"> 으로 전송-->
     <h3>폼 태그 예제</h3>
-    <!-- 폼 하나당 subimt 하나 -->
+                <!-- 폼 하나당 subimt 하나 -->
     <form action="">
             <div>
                 <label for="user-id">아이디</label>
@@ -19,7 +22,10 @@
                 <input type="password" id="user-password" name="password">
             </div> 
             <div>
+                <!-- 아래 두코드는 동일 수행 -->
                 <input type="submit" value="로그인">
+                <button>로그인</button>
+                <!-- 태그 어느 곳에 커서를 놓고 컨+슬 하면 주석으로 변형 -->
             </div> 
     </form>
     <form action="">
@@ -52,8 +58,32 @@
             <!-- 지우는 역할 -->
         </div>
     </form>
-    <!-- 브라우저 내장 마다 다름 -->
-     <h2>날짜</h2>
-        <input type="date" name="date">
+            <!-- 브라우저 내장 마다 다름 -->
+             <h4>날짜</h4>
+    <div><input type="date" name="date"></div> 
+            <!-- 아래 버튼은 submit이 아니므로 전송기능이 없음  -->
+             <h4>버튼</h4>
+    <div><input type="button" value="버튼"></div> 
+            <!-- button 태그는 기본적으로 submit을 포함 -->
+    <div><button>버튼</button></div>
+    <h4>파일</h4>
+    <input type="file">
+    <input type="hidden" name="상품id" value="12345">
+    <input type="text" placeholder="예 2000.01.01" name="address">
+    <!-- textarea는 입력 받아야할 정보양이 많을때 사용-->
+</body>     
+    <textarea name="memo" cols="40" row="4"></textarea>
+
+    <!-- selcet&option 드롭다운 목록 -->
+    <div>
+        <label for="prod1">상품 선택</label>
+        <select id="prod1" name="prod1">
+            <option value="spacial_3">선물용 3kg</option>
+            <option value="spacial_5">선물용 5kg</option>
+            <option value="family_3">가정용 3kg</option>
+            <option value="family_5">가정용 5kg</option>
+        </select>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br>
 </body>
 </html>
