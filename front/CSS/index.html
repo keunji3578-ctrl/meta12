@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* 요소 선택자 */
+        div {
+            background-color: rgb(152, 240, 140);
+        }
+        /* 클래스 선택자 */
+        .a1 {
+            background-color: rgb(207, 148, 209);
+        }
+        /* 아이디 선택자 */
+        #id200 {
+            background-color: rgb(231, 231, 134);
+        }
+        /* 클래스가 id200, 클래스가 a1 인 요소 (두개를 모두 가진 요소) */
+        #id300.a1 {
+            background-color: rgb(104, 102, 180);
+        }
+        .temp {
+            /* 가장 우선순위가 높은 !important 사용법
+            충돌의 해결 최후 수단법 */
+            color: rgb(75, 79, 131) !important;
+        }
+        input[type="text"] {
+            border: 2px solid rgb(199, 40, 106);
+        }
+        [date-costom="mystyle1"] {
+            background-color: rgb(96, 144, 207);
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div>div 요소</div>
+    <P>p 요소</P>
+    <p class="a1">클래스가 a1</p>
+    <p class="a2">클래스가 a2</p>
+    <p id="id200">id가 200 입니다</p>
+    <p id="id300" class="a1">id가 300 입니다</p>
+    <!-- 다른 요소여도 클래스가 같기에 똑같음 -->
+    <article class="a1">나는 아티클 클래스는 a1</article>
+    <p class="text" style="border: 3px dotted rgb(212, 115, 147);">인라인 스타일</p>
+    <form>
+        <p><input type="text"></p>
+        <p><input type="password"></p>
+        <p data-custom="mystyle1">내가 만든 속성을 사용해도 됨</p>
+        <p data-custom="mystyle2">대신 date-*** 형태 권장</p>
+    </form>
+</body>
+</html>
