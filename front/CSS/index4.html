@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            /* html 페이지 전체에 적용되는 기본 마진과 패딩을 0으로 만들어서 개발자 의도대로 스타일링 */
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .a1 {
+            font-size: 32px;
+            border: 2px solid rgb(204, 162, 162);
+            /* 모서리 둥글기 */
+            border-radius: 50%;
+            width: 500px;
+            height: 500px;
+            text-align: center;
+            /* 세로 정렬로 쓰지마셈 */
+            /* 글꼴 크기(32px)+160+160
+            2배인 크기를 위아래로 나누는 것 */
+            line-height: 11.5;
+            padding: 20px;
+        }
+        /* 레이아웃(원래 초기로 돌리는):initial=unset */
+        /* visibility: hidden 안보이게함 */
+    </style>
+</head>
+<body>
+    <div class="a1">가로 정렬</div>
+</body>
+</html>
