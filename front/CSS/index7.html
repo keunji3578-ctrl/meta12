@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            gap: 20px
+        }
+        .sidebar {
+            background-color: #f0f0f0;
+            /* 고정 가로 너비 200px */
+            flex: 0 0 200px;
+        }
+        .main {
+            background-color: lightblue;
+            /* flex 1 1 0을 의미 */
+            flex: 1;
+        }
+                /* flex: grow shrink basis */
+        /* 사용 예) flex 0 1 auto  확장x 축소o,컨텐츠사이즈 */
+        /*         flex 1 0 0     확장o 축소x ,컨텐츠 사이즈 무시 */
+        /*         flex 1         확장o 축소기본값(1), 컨텐츠 사이즈 무시 (0) */
+    </style>
+</head>
+<body>
+    <h3>Flexbox 기본 예제</h3>
+    <div class="container">
+        <div class="sidebar">사이드바</div>
+        <div class="main">메인 컨텐츠</div>
+        <div class="sidebar">사이드바</div>
+    </div>
+</body>
+</html>
